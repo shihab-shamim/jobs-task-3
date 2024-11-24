@@ -108,14 +108,14 @@ const ViewProperty = () => {
       >
       {
   items.map((item, index) => (
-    <div key={index} className="card bg-base-100 sm:max-w-[350px] md:w-full shadow-xl">
+    <div key={index} className="card bg-base-100 sm:max-w-[350px] md:w-full shadow-xl transform hover:scale-105  transition-transform duration-300">
       <figure>
         <img
           src={item.propertyLink} 
           alt={item.propertyName} 
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body ">
         <h2 className="card-title">{item.propertyName}</h2> 
         <p>Rental Type : {item.propertyType}</p> 
         <div className="card-actions  justify-end">
