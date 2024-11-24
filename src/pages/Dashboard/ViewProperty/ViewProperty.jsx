@@ -34,7 +34,6 @@ const ViewProperty = () => {
     setItems([...properties,...parsedItems]); 
     setProperty([...properties,...parsedItems])
   }
-    console.log(value)
 
   },[])
 
@@ -105,11 +104,11 @@ const ViewProperty = () => {
       <div
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="grid md:grid-cols-3 grid-cols-1 gap-4 md:m-10 m-3"
+        className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:m-10 m-3"
       >
       {
   items.map((item, index) => (
-    <div key={index} className="card bg-base-100 shadow-xl">
+    <div key={index} className="card bg-base-100 sm:max-w-[350px] md:w-full shadow-xl">
       <figure>
         <img
           src={item.propertyLink} 
