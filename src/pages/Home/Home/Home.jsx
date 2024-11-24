@@ -5,7 +5,7 @@ AOS.init()
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-[25vw]">
       <h2
         data-aos="flip-left"
         data-aos-duration="1500"
